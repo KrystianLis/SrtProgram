@@ -32,6 +32,18 @@ while (true)
         var subtitles = await reader.ReadAsync(filePath);
         processor.Process(subtitles);
 
+        var equalSeconds = subtitles
+            .Where(s => s.StartTime.Milliseconds == 0)
+            .ToList();
+
+        subtitles.RemoveAll(s => s.StartTime.Milliseconds == 0);
+        Console.WriteLine(Path.GetDirectoryName(filePath));
+
+        string equalSecondsPath = @$"{Path.GetDirectoryName(filePath)}\equalSeconds.srt";
+
+        await writer.WriteAsync(equalSecondsPath, equalSeconds);
+        Console.WriteLine($"Subtitles with equal seconds saved to {equalSecondsPath}");
+
         await writer.WriteAsync(filePath, subtitles);
 
         Console.WriteLine($"Processed file: {filePath}");
