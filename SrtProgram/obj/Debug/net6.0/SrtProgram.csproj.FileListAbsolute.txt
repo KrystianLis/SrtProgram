@@ -1,0 +1,15 @@
+C:\Dev\SrtProgram\SrtProgram\bin\Debug\net6.0\SrtProgram.exe
+C:\Dev\SrtProgram\SrtProgram\bin\Debug\net6.0\SrtProgram.deps.json
+C:\Dev\SrtProgram\SrtProgram\bin\Debug\net6.0\SrtProgram.runtimeconfig.json
+C:\Dev\SrtProgram\SrtProgram\bin\Debug\net6.0\SrtProgram.dll
+C:\Dev\SrtProgram\SrtProgram\bin\Debug\net6.0\SrtProgram.pdb
+C:\Dev\SrtProgram\SrtProgram\obj\Debug\net6.0\SrtProgram.csproj.AssemblyReference.cache
+C:\Dev\SrtProgram\SrtProgram\obj\Debug\net6.0\SrtProgram.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\SrtProgram\SrtProgram\obj\Debug\net6.0\SrtProgram.AssemblyInfoInputs.cache
+C:\Dev\SrtProgram\SrtProgram\obj\Debug\net6.0\SrtProgram.AssemblyInfo.cs
+C:\Dev\SrtProgram\SrtProgram\obj\Debug\net6.0\SrtProgram.csproj.CoreCompileInputs.cache
+C:\Dev\SrtProgram\SrtProgram\obj\Debug\net6.0\SrtProgram.dll
+C:\Dev\SrtProgram\SrtProgram\obj\Debug\net6.0\refint\SrtProgram.dll
+C:\Dev\SrtProgram\SrtProgram\obj\Debug\net6.0\SrtProgram.pdb
+C:\Dev\SrtProgram\SrtProgram\obj\Debug\net6.0\SrtProgram.genruntimeconfig.cache
+C:\Dev\SrtProgram\SrtProgram\obj\Debug\net6.0\ref\SrtProgram.dll
