@@ -2,7 +2,7 @@
 
 namespace SrtProgram.Interfaces;
 
-public interface ISubtitleWriter
+public interface ISrtWriter
 {
     Task WriteAsync(string path, List<Subtitle> subtitles);
 }

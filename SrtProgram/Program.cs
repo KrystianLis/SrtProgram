@@ -1,9 +1,9 @@
 ﻿using SrtProgram.Interfaces;
 using SrtProgram.Providers;
 
-ISubtitleReader reader = new SubtitleReader(new ProFileReader());
-ISubtitleWriter writer = new SubtitleWriter(new ProFileWriter());
-ISubtitleProcessor processor = new SubtitleProcessor(TimeSpan.FromSeconds(5.88));
+ISrtReader reader = new SrtReader(new ProFileReader());
+ISrtWriter writer = new SrtWriter(new ProFileWriter());
+ISrtProcessor processor = new SrtProcessor(TimeSpan.FromSeconds(5.88));
 
 while (true)
 {

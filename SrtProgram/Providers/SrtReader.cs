@@ -4,11 +4,11 @@ using SrtProgram.Models;
 
 namespace SrtProgram.Providers;
 
-public class SubtitleReader : ISubtitleReader
+public class SrtReader : ISrtReader
 {
     private readonly IFileReader _fileReader;
 
-    public SubtitleReader(IFileReader fileReader)
+    public SrtReader(IFileReader fileReader)
         => _fileReader = fileReader;
 
     public async Task<List<Subtitle>> ReadAsync(string path)

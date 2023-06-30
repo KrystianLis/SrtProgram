@@ -3,11 +3,11 @@ using SrtProgram.Models;
 
 namespace SrtProgram.Providers;
 
-public class SubtitleWriter : ISubtitleWriter
+public class SrtWriter : ISrtWriter
 {
     private readonly IFileWriter _fileWriter;
 
-    public SubtitleWriter(IFileWriter fileWriter)
+    public SrtWriter(IFileWriter fileWriter)
         => _fileWriter = fileWriter;
 
     public async Task WriteAsync(string path, List<Subtitle> subtitles)

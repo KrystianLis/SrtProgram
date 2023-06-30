@@ -2,7 +2,7 @@
 
 namespace SrtProgram.Interfaces;
 
-public interface ISubtitleProcessor
+public interface ISrtProcessor
 {
     void Process(List<Subtitle> subtitles);
 }

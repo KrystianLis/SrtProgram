@@ -2,7 +2,7 @@
 
 namespace SrtProgram.Interfaces;
 
-public interface ISubtitleReader
+public interface ISrtReader
 {
     Task<List<Subtitle>> ReadAsync(string path);
 }

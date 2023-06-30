@@ -3,11 +3,11 @@ using SrtProgram.Models;
 
 namespace SrtProgram.Providers;
 
-public class SubtitleProcessor : ISubtitleProcessor
+public class SrtProcessor : ISrtProcessor
 {
     private readonly TimeSpan _offset;
 
-    public SubtitleProcessor(TimeSpan offset)
+    public SrtProcessor(TimeSpan offset)
         => _offset = offset;
 
     public void Process(List<Subtitle> subtitles)
