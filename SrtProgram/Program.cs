@@ -1,4 +1,5 @@
-﻿using SrtProgram.Interfaces;
+﻿using SrtProgram.Extensions;
+using SrtProgram.Interfaces;
 using SrtProgram.Providers;
 
 ISrtReader reader = new SrtReader(new ProFileReader());
@@ -34,10 +35,12 @@ while (true)
 
         var equalSeconds = subtitles
             .Where(s => s.StartTime.Milliseconds == 0)
-            .ToList();
+            .ReassignSubtitleNumbers();
 
         subtitles.RemoveAll(s => s.StartTime.Milliseconds == 0);
         Console.WriteLine(Path.GetDirectoryName(filePath));
+
+        subtitles = subtitles.ReassignSubtitleNumbers();
 
         string equalSecondsPath = @$"{Path.GetDirectoryName(filePath)}\equalSeconds.srt";
 
