@@ -38,7 +38,6 @@ while (true)
             .ReassignSubtitleNumbers();
 
         subtitles.RemoveAll(s => s.StartTime.Milliseconds == 0);
-        Console.WriteLine(Path.GetDirectoryName(filePath));
 
         subtitles = subtitles.ReassignSubtitleNumbers();
 
